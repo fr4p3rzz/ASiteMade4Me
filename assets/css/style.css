@@ -88,8 +88,16 @@ body{
     margin-bottom: 0.25em;
 }
 
-.play-content{
+.bg-custom{
+    background-color: #723D46;
+}
+
+.padded-row{
     padding: 10px;
+}
+
+.site-pill{
+    margin-bottom: 10px;
 }
 
 #first-col{
