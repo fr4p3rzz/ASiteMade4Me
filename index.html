@@ -12,53 +12,60 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-primary" type="submit">Search</button>
-            </form>
+    <div class="container-fluid">
+      <div class="row heading">
+
+      </div>
+      <div class="row">
+        <a style="display: none;" class="btn btn-primary column-collapse" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">X</a>
+        <div class="col-md-2 main-col" id="first-col">
+          <p class="h1">Stuff</p>
+            <div class="row">
+                <a class="btn btn-primary" href="/BrainfuckJS/">Learn how to Brainfuck</a>
+            </div>    
+            <div class="row">
+              <p class="description main-content">Did you know that there's a programming language called Brainfuck? Give it a shot!</p>
+
+            </div>   
+        </div>
+        
+         <a style="display: none;" class="btn btn-success column-collapse" data-bs-toggle="collapse" href="#second-col" role="button" aria-expanded="false" aria-controls="second-col">X</a>
+        <div class="col-md-2 main-col" id="second-col">
+          <p class="h1">Stuff 2 </p>
+          <div class="row">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 main-col" id="first-col">
-          <p class="h1">Who am I</p>
-        </div>
-        <div class="col-md-3 main-col" id="second-col">
-          <p class="h1">Get in touch</p>
-        </div>
-        <div class="col-md-6" id="third-col">
-          <p class="h1">Who am I </p>
+        <div class="col-md-8" id="third-col">
+          <p class="h1">Who am I?</p>
         </div>
       </div>
     </div>
