@@ -80,6 +80,10 @@ body{
     margin-bottom: 0.75em;
 }
 
+.play-content{
+    padding: 10px;
+}
+
 #first-col{
     text-align: center;
     background-color: #FFE1A8;
