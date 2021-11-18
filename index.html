@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/bootstrap-5.1.3/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
 
       </div>
       <div class="row">
-        <a style="display: none;" class="btn btn-primary column-collapse" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">X</a>
+        <a style="display: none;" class="btn btn-primary column-collapse float-start" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">X</a>
         <div class="col-md-2 main-col" id="first-col">
           <p class="h1">Stuff</p>
             <div class="row">
@@ -25,7 +27,6 @@
             </div>    
             <div class="row">
               <p class="description main-content">Did you know that there's a programming language called Brainfuck? Give it a shot!</p>
-
             </div>   
         </div>
         
@@ -66,9 +67,33 @@
         </div>
         <div class="col-md-8" id="third-col">
           <p class="h1">Who am I?</p>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
         </div>
       </div>
     </div>
+
+
+
+    <!-- <div class="dropdown">
+      <button class="dropdown-toggle float my-float" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+
+    <a href="#" class="float">
+      <i class="fa fa-plus my-float"></i>
+    </a> -->
     
 <!-- Bootstrap 5.1.3 JS -->
 <script type="text/javascript" src="assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
