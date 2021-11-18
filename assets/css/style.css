@@ -8,12 +8,13 @@
 }
 
 
-@media(min-width: 900px){
+@media(min-width: 1025px){
     .main-col{
         height: 100vh;
     }
+
     .main-col:hover{
-        width: 75%;
+        width: 20%;
         overflow: hidden;
     }
 
@@ -24,8 +25,11 @@
     }
 }
 
-@media(max-width: 899px)
+@media(max-width: 1024px)
 {
+    .main-col{
+        width: 100%;
+    }
     .main-col:focus{
         height: 100vh;
         overflow: hidden;
