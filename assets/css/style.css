@@ -43,6 +43,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 .float{
     z-index: 999;
 	position:fixed;
