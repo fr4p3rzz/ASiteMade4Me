@@ -22,7 +22,33 @@
         position: fixed;
         margin-left: 50%;
     }
+    .dropdown-menu{
+        position: absolute;
+        padding-right: 130px;
+        padding-bottom: 40px;
+    }
 }
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+    background-color: #472D30;
+    color: #fff;
+}
+
 
 @media(max-width: 1024px)
 {
@@ -67,11 +93,6 @@ a{
 
 .my-float{
 	margin-top:22px;
-}
-
-body{
-    background-color: #472D30;
-    color: #fff;
 }
 
 .main-col{
