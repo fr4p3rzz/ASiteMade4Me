@@ -39,6 +39,9 @@
     #second-col{
         margin-bottom: 10px;
     }
+    #third-col{
+        align-content: center;
+    }
 
 }
 
