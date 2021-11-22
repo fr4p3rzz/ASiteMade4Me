@@ -21,7 +21,6 @@
     #third-col{
         position: fixed;
         margin-left: 50%;
-        z-index: -1;
     }
 }
 
@@ -94,6 +93,21 @@ body{
 
 .padded-row{
     padding: 10px;
+}
+
+.accordion-button{
+
+}
+
+.accordion{
+
+}
+
+.social-icon{
+    color: white;
+    font-size: 2.5em;
+    margin: 0.75em;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
 .site-pill{
