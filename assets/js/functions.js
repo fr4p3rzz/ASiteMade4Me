@@ -29,3 +29,4 @@ window.addEventListener("resize", () => {
         secondCol.removeAttribute("style"); //prevent visual glitches if the user has used the offcanvas mode right before switching to desktop view
     }
 });
+
