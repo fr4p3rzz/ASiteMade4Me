@@ -73,14 +73,10 @@ document.getElementById("les-crabes").addEventListener("click", () =>{
     if(crabCounter == 10)
     {
         document.getElementById("les-crabes").style.color = "#cd7f84";
-    }
-
-    if(crabCounter == 35)
+    } else if(crabCounter == 35)
     {
         document.getElementById("les-crabes").style.fontSize = "30px";
-    }
-
-    if(crabCounter == 60)
+    } else if(crabCounter == 60)
     {
         document.getElementById("les-crabes").style.fontSize = "50px";
         let allStrings = Array.from(document.querySelectorAll("p"));
@@ -88,9 +84,19 @@ document.getElementById("les-crabes").addEventListener("click", () =>{
         {
             allStrings[i].innerHTML = lesCrabes + ".....";
         }
-    }
 
-    if(crabCounter == 100)
+        allStrings = Array.from(document.querySelectorAll("a"));
+        for(let i = 0; i < allStrings.length; i++)
+        {
+            allStrings[i].innerHTML = lesCrabes + ".....";
+        }
+
+        allStrings = Array.from(document.querySelectorAll("th"));
+        for(let i = 0; i < allStrings.length; i++)
+        {
+            allStrings[i].innerHTML = lesCrabes + ".....";
+        }
+    } else if(crabCounter == 100)
     {
         let url = "https://www.youtube.com/watch?v=cE0wfjsybIQ&ab_channel=Noisestorm"
         window.open(url,'_blank');
