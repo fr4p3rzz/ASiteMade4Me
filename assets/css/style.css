@@ -39,9 +39,8 @@
     .column-collapse{
         display: block !important;
     }
-    #second-col{
+    .offcanvas{
         width: 75%;
-        margin-bottom: 10px;
     }
     #third-col{
         align-content: center;
@@ -57,9 +56,13 @@
     .accordion-body{
         font-size: 12px;
     }
+
+    #first-col{
+        padding: 8%;
+    }
 }
 
-@media(max-width: 360px)
+@media(max-width: 370px)
 {
     .accordion-body{
         font-size: 9px;
