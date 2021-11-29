@@ -52,6 +52,24 @@
     }
 }
 
+@media(max-width: 767px)
+{
+    .accordion-body{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 360px)
+{
+    .accordion-body{
+        font-size: 9px;
+    }
+
+    .offcanvas{
+        width: 90% !important;
+    }
+}
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -75,6 +93,10 @@ body{
 a{
     text-decoration: none;
     font-weight: bolder;
+}
+
+.offcanvas{
+    height: 100%;
 }
 
 .float{
