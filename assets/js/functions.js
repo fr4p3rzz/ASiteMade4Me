@@ -36,6 +36,13 @@ mainContainer.addEventListener("click", () => {
     }
 })
 
+document.getElementById("dropdown-menu").addEventListener("click", () => {
+    if(mainContainer.hasAttribute("style"))
+    {
+        mainContainer.removeAttribute("style");
+    }
+})
+
 floatingMenu.addEventListener("click", () => {
     
     if(mainContainer.hasAttribute("style"))
