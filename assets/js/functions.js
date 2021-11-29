@@ -82,7 +82,14 @@ document.getElementById("les-crabes").addEventListener("click", () =>{
         let allStrings = Array.from(document.querySelectorAll("p"));
         for(let i = 0; i < allStrings.length; i++)
         {
-            allStrings[i].innerHTML = lesCrabes + ".....";
+            if(allStrings[i].id == "les-crabes")
+            {
+                continue;
+            }
+            else
+            {
+                allStrings[i].innerHTML = lesCrabes + ".....";
+            }
         }
 
         allStrings = Array.from(document.querySelectorAll("a"));
@@ -96,6 +103,7 @@ document.getElementById("les-crabes").addEventListener("click", () =>{
         {
             allStrings[i].innerHTML = lesCrabes + ".....";
         }
+        
     } else if(crabCounter == 100)
     {
         let url = "https://www.youtube.com/watch?v=cE0wfjsybIQ&ab_channel=Noisestorm"
