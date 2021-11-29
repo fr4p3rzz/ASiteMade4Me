@@ -2,6 +2,9 @@ let firstCol = document.getElementById("first-col");
 let secondCol = document.getElementById("second-col");
 let thirdCol = document.getElementById("third-col");
 let viewportBreakpoint = 1024; //viewport width
+
+let floatingMenu = document.getElementById("main-menu");
+let mainContainer = document.getElementById("main-container");
 if(window.innerWidth <= viewportBreakpoint)
 {
     activateOffcanvas();
@@ -25,6 +28,25 @@ window.addEventListener("resize", () => {
         deactivateOffcanvas();
     }
 });
+
+mainContainer.addEventListener("click", () => {
+    if(mainContainer.hasAttribute("style"))
+    {
+        mainContainer.removeAttribute("style");
+    }
+})
+
+floatingMenu.addEventListener("click", () => {
+    
+    if(mainContainer.hasAttribute("style"))
+    {
+        mainContainer.removeAttribute("style");
+    }
+    else
+    {
+        mainContainer.setAttribute("style", "opacity: 0.3;")
+    }
+})
 
 
 function activateOffcanvas()
