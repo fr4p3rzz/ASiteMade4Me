@@ -3,9 +3,14 @@ let secondCol = document.getElementById("second-col");
 let thirdCol = document.getElementById("third-col");
 let viewportBreakpoint = 1024; //viewport width
 let crabs = 7; //Neven enough crabs
-
+let midCol = "col-md-6";
+let fullCol = "col-lg-12";
+let lesCrabes = ".....(\\/)(°,,,,°)(\\/)"
+let lesOtherCrabes = "(\\/)(°,,,,°)(\\/)....."
 let floatingMenu = document.getElementById("main-menu");
 let mainContainer = document.getElementById("main-container");
+let crabCounter = 0;
+
 if(window.innerWidth <= viewportBreakpoint)
 {
     activateOffcanvas();
@@ -17,8 +22,8 @@ window.addEventListener("resize", () => {
     if(window.innerWidth <= viewportBreakpoint)
     {
         /** if we are in ipad/mobile (or res < 720p) center the content of the third column */
-        thirdCol.classList.remove("col-md-6");
-        thirdCol.classList.add("col-lg-12");
+        thirdCol.classList.remove(midCol);
+        thirdCol.classList.add(fullCol);
 
         activateOffcanvas();
         activateMobileStyle();
@@ -26,8 +31,8 @@ window.addEventListener("resize", () => {
     }
     else
     {
-        thirdCol.classList.remove("col-lg-12");
-        thirdCol.classList.add("col-md-6");
+        thirdCol.classList.remove(fullCol);
+        thirdCol.classList.add(midCol);
 
         deactivateOffcanvas();
         deactivateMobileStyle();
@@ -60,6 +65,38 @@ floatingMenu.addEventListener("click", () => {
     }
 })
 
+document.getElementById("les-crabes").addEventListener("click", () =>{
+
+    document.getElementById("les-crabes").innerHTML +=  lesOtherCrabes;
+    crabCounter++;
+
+    if(crabCounter == 10)
+    {
+        document.getElementById("les-crabes").style.color = "#cd7f84";
+    }
+
+    if(crabCounter == 35)
+    {
+        document.getElementById("les-crabes").style.fontSize = "30px";
+    }
+
+    if(crabCounter == 60)
+    {
+        document.getElementById("les-crabes").style.fontSize = "50px";
+        let allStrings = Array.from(document.querySelectorAll("p"));
+        for(let i = 0; i < allStrings.length; i++)
+        {
+            allStrings[i].innerHTML = lesCrabes + ".....";
+        }
+    }
+
+    if(crabCounter == 100)
+    {
+        let url = "https://www.youtube.com/watch?v=cE0wfjsybIQ&ab_channel=Noisestorm"
+        window.open(url,'_blank');
+    }
+})
+
 
 function activateOffcanvas()
 {
@@ -83,13 +120,11 @@ function deactivateOffcanvas()
 
 function activateMobileStyle()
 {
-    document.getElementById("les-crabes").innerHTML= ".....(\\/)(°,,,,°)(\\/).....";
+    document.getElementById("les-crabes").innerHTML=  lesCrabes + ".....";
 }
 
 function deactivateMobileStyle()
 {
-    let lesCrabes = ".....(\\/)(°,,,,°)(\\/)"
-
     document.getElementById("les-crabes").innerHTML= "";
 
     for(let i = 0; i < crabs; i++)
