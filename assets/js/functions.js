@@ -2,12 +2,14 @@ let firstCol = document.getElementById("first-col");
 let secondCol = document.getElementById("second-col");
 let thirdCol = document.getElementById("third-col");
 let viewportBreakpoint = 1024; //viewport width
+let crabs = 7; //Neven enough crabs
 
 let floatingMenu = document.getElementById("main-menu");
 let mainContainer = document.getElementById("main-container");
 if(window.innerWidth <= viewportBreakpoint)
 {
     activateOffcanvas();
+    activateMobileStyle();
 }
 
 
@@ -19,6 +21,8 @@ window.addEventListener("resize", () => {
         thirdCol.classList.add("col-lg-12");
 
         activateOffcanvas();
+        activateMobileStyle();
+
     }
     else
     {
@@ -26,6 +30,7 @@ window.addEventListener("resize", () => {
         thirdCol.classList.add("col-md-6");
 
         deactivateOffcanvas();
+        deactivateMobileStyle();
     }
 });
 
@@ -74,4 +79,23 @@ function deactivateOffcanvas()
     secondCol.removeAttribute("tabindex");
     secondCol.removeAttribute("aria-labelledby");
     secondCol.removeAttribute("style"); //prevent visual glitches if the user has used the offcanvas mode right before switching to desktop view
+}
+
+function activateMobileStyle()
+{
+    document.getElementById("les-crabes").innerHTML= ".....(\\/)(°,,,,°)(\\/).....";
+}
+
+function deactivateMobileStyle()
+{
+    let lesCrabes = ".....(\\/)(°,,,,°)(\\/)"
+
+    document.getElementById("les-crabes").innerHTML= "";
+
+    for(let i = 0; i < crabs; i++)
+    {
+        document.getElementById("les-crabes").innerHTML += lesCrabes;
+    }
+
+    document.getElementById("les-crabes").innerHTML += ".....";
 }

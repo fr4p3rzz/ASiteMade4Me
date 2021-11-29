@@ -162,6 +162,10 @@ a{
     margin-bottom: 10px;
 }
 
+#countdown{
+    font-size: 18px;
+}
+
 #first-col{
     text-align: center;
     background-color: #FFE1A8;
