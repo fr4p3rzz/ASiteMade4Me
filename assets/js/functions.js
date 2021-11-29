@@ -15,7 +15,7 @@ window.addEventListener("resize", () => {
     if(window.innerWidth <= viewportBreakpoint)
     {
         /** if we are in ipad/mobile (or res < 720p) center the content of the third column */
-        thirdCol.classList.remove("col-md-8");
+        thirdCol.classList.remove("col-md-6");
         thirdCol.classList.add("col-lg-12");
 
         activateOffcanvas();
@@ -23,7 +23,7 @@ window.addEventListener("resize", () => {
     else
     {
         thirdCol.classList.remove("col-lg-12");
-        thirdCol.classList.add("col-md-8");
+        thirdCol.classList.add("col-md-6");
 
         deactivateOffcanvas();
     }
