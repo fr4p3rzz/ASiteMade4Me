@@ -1,7 +1,7 @@
 let firstCol = document.getElementById("first-col");
 let secondCol = document.getElementById("second-col");
-let thirdCol = document.getElementById("third-col");
-let viewportBreakpoint = 1024; //viewport width
+let thirdCol = document.getElementById("back-col");
+let viewportBreakpoint = 1024; //viewport width to be considered "desktop"
 let crabs = 7; //Neven enough crabs
 let midCol = "col-md-6";
 let fullCol = "col-lg-12";
@@ -135,6 +135,7 @@ function deactivateOffcanvas()
 function activateMobileStyle()
 {
     document.getElementById("les-crabes").innerHTML=  lesCrabes + ".....";
+    document.querySelector("#back-col > div.row.padded-row.stripe.stripe-dark.text-dark.text-center > p").classList.remove("text-end");
 }
 
 function deactivateMobileStyle()
@@ -147,4 +148,6 @@ function deactivateMobileStyle()
     }
 
     document.getElementById("les-crabes").innerHTML += ".....";
+    document.querySelector("#back-col > div.row.padded-row.stripe.stripe-dark.text-dark.text-center > p").classList.add("text-end");
+
 }

@@ -8,7 +8,7 @@
     <!-- Bootstrap 5.1.3 css -->
     <link rel="stylesheet" href="assets/bootstrap-5.1.3/css/bootstrap.css">
 
-    <!-- my own super personal style -->
+    <!-- Ye local swag -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- fontawesome for icons -->
@@ -22,23 +22,29 @@
       <div class="row heading">
         <div class="col-md-6 text-center" id="back-col">
           <p class="h1">Who am I?</p>
-          <p>Actually, just someone who have fun with coding. Get in touch?</p>
-          <div class="row align-content-center">
-            <div class="col-lg">
-              <a class="fa-brands fa-linkedin social-icon" href="https://www.linkedin.com/in/francescoperuzzi/" target="_blank" alt="linkedin" title="Get in touch with LinkedIn"></a>
-              <a class="fa-brands fa-github social-icon" href="https://github.com/fr4p3rzz" target="_blank" alt="github" title="Add me on GitHub"></a>
-              <a class="fa-solid fa-envelope social-icon" href="https://mail.google.com/mail/?view=cm&fs=1&to=francesco95peruzzi@gmail.com&su=Hello!" target="_blank" alt="mail-me" title="Mail me"></a>
-            </div>
+          <p>Actually, just someone who have fun with coding</p>
+        <br>
+        <div class="row padded-row stripe stripe-dark" id="countdown-stripe">
+          <p class="col-md-6 my-auto text-dark"> Let's wait for <strong> Elden Ring </strong> toghether:</p>
+          <p class="col-md-6 my-auto rounded-pill  primary-pill" id="countdown"></p>
+      </div>
+          <br>
+          <div class="row stripe stripe-light my-auto">
+            <p class="col-lg-12 my-auto" id="les-crabes">.....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....</p>
           </div>
         <br>
-          <div class="row">
-            <p class="col-lg-12 stripe text-dark" id="les-crabes">.....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....</p>
+        <div class="row padded-row stripe stripe-dark text-dark text-center">
+           <p class="col-md-3 my-auto text-lg text-end">Get in touch?</p>
+          <div class="col-md-3">
+            <a class="fa-brands fa-linkedin social-icon" href="https://www.linkedin.com/in/francescoperuzzi/" target="_blank" alt="linkedin" title="Get in touch with LinkedIn"></a>
           </div>
-        <br>
-          <div class="row padded-row stripe" id="countdown-stripe">
-              <p class="col-md-6 my-auto text-dark"> Let's wait for <strong> Elden Ring </strong> toghether:</p>
-              <p class="col-md-6 my-auto rounded-pill  primary-pill" id="countdown"></p>
+          <div class="col-md-3">
+            <a class="fa-brands fa-github social-icon" href="https://github.com/fr4p3rzz" target="_blank" alt="github" title="Add me on GitHub"></a>
           </div>
+          <div class="col-md-3">
+            <a class="fa-solid fa-envelope social-icon" href="https://mail.google.com/mail/?view=cm&fs=1&to=francesco95peruzzi@gmail.com&su=Hello!" target="_blank" alt="mail-me" title="Mail me"></a>
+          </div>
+        </div>
         </div>
       </div>
       <div class="row">
@@ -70,7 +76,6 @@
       </div>   
         </div>
         
-
         <div class="col-md-2 main-col text-dark text-center" id="second-col">
           <p class="h1">Known skills </p>
           <div class="row">
@@ -139,8 +144,7 @@
 
 
     <div class="dropdown">
-      <button class="fa fa-plus float my-float" type="button" id="main-menu" data-bs-toggle="dropdown" aria-expanded="false">
-      </button>
+      <button class="fa fa-plus float my-float" type="button" id="main-menu" data-bs-toggle="dropdown" aria-expanded="false"></button>
       <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="main-menu">
         <li><a class="dropdown-item rounded-pill" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">Toggle the fun</a></li>
         <li><button class="dropdown-item rounded-pill offcanvas-button text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#second-col" aria-controls="second-col">Show me some data, boy</button></li>
