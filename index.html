@@ -20,7 +20,7 @@
 <body>
     <div class="container-fluid" id="main-container">
       <div class="row heading">
-        <div class="col-md-6" id="third-col">
+        <div class="col-md-6 text-center" id="back-col">
           <p class="h1">Who am I?</p>
           <p>Actually, just someone who have fun with coding. Get in touch?</p>
           <div class="row align-content-center">
@@ -30,15 +30,19 @@
               <a class="fa-solid fa-envelope social-icon" href="https://mail.google.com/mail/?view=cm&fs=1&to=francesco95peruzzi@gmail.com&su=Hello!" target="_blank" alt="mail-me" title="Mail me"></a>
             </div>
           </div>
-          <br>
-          <p id="les-crabes">.....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....</p>
-          <br>
-          <p class="h2">Let's wait for Elden Ring toghether:</p>
-          <p class="badge rounded-pill bg-custom site-pill" id="countdown"></p>
+        <br>
+          <div class="row">
+            <p class="col-lg-12 stripe text-dark" id="les-crabes">.....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....</p>
+          </div>
+        <br>
+          <div class="row padded-row stripe" id="countdown-stripe">
+              <p class="col-md-6 my-auto text-dark"> Let's wait for <strong> Elden Ring </strong> toghether:</p>
+              <p class="col-md-6 my-auto rounded-pill  primary-pill" id="countdown"></p>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 main-col show dark-text" id="first-col">
+        <div class="col-md-2 main-col show text-dark text-center" id="first-col">
           <p class="h1">Fun stuff</p>
             <div class="row padded-row">
                 <a class="btn btn-primary" href="/BrainfuckJS/" alt="brainfuck-js">Brainfuck interpreter</a>
@@ -67,7 +71,7 @@
         </div>
         
 
-        <div class="col-md-2 main-col dark-text" id="second-col">
+        <div class="col-md-2 main-col text-dark text-center" id="second-col">
           <p class="h1">Known skills </p>
           <div class="row">
             <table class="table languages-table">
@@ -126,8 +130,8 @@
           <br>
           <p class="h1">I worked on</p>
           <div class="row padded-row worked-on">
-              <a class="badge rounded-pill bg-custom site-pill" href="https://www.parisotto.it/it/en/" target="_blank" alt="parisotto-snc">ParisottoSNC</a>
-              <a class="badge rounded-pill bg-custom site-pill" href="#" alt="here-we-are">This wonderful site, ofc</a>
+              <a class="badge rounded-pill primary-pill" href="https://www.parisotto.it/it/en/" target="_blank" alt="parisotto-snc">ParisottoSNC</a>
+              <a class="badge rounded-pill primary-pill" href="#" alt="here-we-are">This wonderful site, ofc</a>
           </div>
         </div>
       </div>
@@ -138,8 +142,8 @@
       <button class="fa fa-plus float my-float" type="button" id="main-menu" data-bs-toggle="dropdown" aria-expanded="false">
       </button>
       <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="main-menu">
-        <li><a class="dropdown-item" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">Toggle the fun</a></li>
-        <li><button class="dropdown-item offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#second-col" aria-controls="second-col">Show me some data, boy</button></li>
+        <li><a class="dropdown-item rounded-pill" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">Toggle the fun</a></li>
+        <li><button class="dropdown-item rounded-pill offcanvas-button text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#second-col" aria-controls="second-col">Show me some data, boy</button></li>
       </ul>
     </div>
 <!-- Bootstrap 5.1.3 JS + popper -->
@@ -147,8 +151,9 @@
 <script type="text/javascript" src="assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
 
 <!-- Custom JS -->
-<script type="text/javascript" src="assets/js/functions.js"></script>
 <script type="text/javascript" src="assets/js/countdown.js"></script>
+<script type="text/javascript" src="assets/js/functions.js"></script>
+
 
 </body>
 </html>
