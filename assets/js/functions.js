@@ -11,13 +11,14 @@ let floatingMenu = document.getElementById("main-menu");
 let mainContainer = document.getElementById("main-container");
 let crabCounter = 0;
 
+/** starts with correct layout */
 if(window.innerWidth <= viewportBreakpoint)
 {
     activateOffcanvas();
     activateMobileStyle();
 }
 
-
+/** real-time viewport check to always adjust the layout */
 window.addEventListener("resize", () => {
     if(window.innerWidth <= viewportBreakpoint)
     {
@@ -39,6 +40,7 @@ window.addEventListener("resize", () => {
     }
 });
 
+/** if an opacity is set and the user clicks wherever, deactivate opacity */
 mainContainer.addEventListener("click", () => {
     if(mainContainer.hasAttribute("style"))
     {
@@ -46,6 +48,7 @@ mainContainer.addEventListener("click", () => {
     }
 })
 
+/** remove opacity once the user has ended using the nav button */
 document.getElementById("dropdown-menu").addEventListener("click", () => {
     if(mainContainer.hasAttribute("style"))
     {
@@ -53,6 +56,7 @@ document.getElementById("dropdown-menu").addEventListener("click", () => {
     }
 })
 
+/** set opacity when the nav button is pressed */
 floatingMenu.addEventListener("click", () => {
     
     if(mainContainer.hasAttribute("style"))
@@ -65,6 +69,7 @@ floatingMenu.addEventListener("click", () => {
     }
 })
 
+/** Crab time */
 document.getElementById("les-crabes").addEventListener("click", () =>{
 
     document.getElementById("les-crabes").innerHTML +=  lesOtherCrabes;
@@ -136,6 +141,7 @@ function activateOffcanvas()
 
 function deactivateOffcanvas()
 {
+    /** if we modify the resolution from under 720 to above 720, reverse the offcanvas to a column */
     secondCol.classList.add("main-col");
     secondCol.classList.remove("offcanvas");
     secondCol.classList.remove("offcanvas-start");
@@ -146,6 +152,7 @@ function deactivateOffcanvas()
 
 function activateMobileStyle()
 {
+    /** Actions that changes the layout to better fit mobile screens */
     document.getElementById("les-crabes").innerHTML=  lesCrabes + ".....";
     document.querySelector("#contacts > p").classList.remove("text-end");
     document.getElementById("alternative-contacts").append(document.getElementById("contacts"));
@@ -154,6 +161,7 @@ function activateMobileStyle()
 
 function deactivateMobileStyle()
 {
+    /** rollback to desktop view if the viewport is changed enough */
     document.getElementById("les-crabes").innerHTML= "";
 
     for(let i = 0; i < crabs; i++)
