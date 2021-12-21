@@ -147,7 +147,9 @@ function deactivateOffcanvas()
 function activateMobileStyle()
 {
     document.getElementById("les-crabes").innerHTML=  lesCrabes + ".....";
-    document.querySelector("#back-col > div.row.padded-row.stripe.stripe-dark.text-dark.text-center > p").classList.remove("text-end");
+    document.querySelector("#contacts > p").classList.remove("text-end");
+    document.getElementById("alternative-contacts").append(document.getElementById("contacts"));
+    document.getElementById("alternative-contacts").removeAttribute("style");
 }
 
 function deactivateMobileStyle()
@@ -159,7 +161,12 @@ function deactivateMobileStyle()
         document.getElementById("les-crabes").innerHTML += lesCrabes;
     }
 
-    document.getElementById("les-crabes").innerHTML += ".....";
-    document.querySelector("#back-col > div.row.padded-row.stripe.stripe-dark.text-dark.text-center > p").classList.add("text-end");
 
+    if(document.querySelector("#alternative-contacts > #contacts") != undefined) 
+    {
+        document.getElementById("back-col").append(document.getElementById("contacts"));
+        document.getElementById("alternative-contacts").setAttribute("style", "display: none")
+    }
+    document.getElementById("les-crabes").innerHTML += ".....";
+    document.querySelector("#contacts > p").classList.add("text-end");
 }
