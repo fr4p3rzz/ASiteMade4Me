@@ -75,10 +75,10 @@ document.getElementById("les-crabes").addEventListener("click", () =>{
         document.getElementById("les-crabes").style.color = "#cd7f84";
     } else if(crabCounter == 35)
     {
-        document.getElementById("les-crabes").style.fontSize = "30px";
+        document.getElementById("les-crabes").style.fontSize = "15px";
     } else if(crabCounter == 60)
     {
-        document.getElementById("les-crabes").style.fontSize = "50px";
+        document.getElementById("les-crabes").style.fontSize = "10px";
         let allStrings = Array.from(document.querySelectorAll("p"));
         for(let i = 0; i < allStrings.length; i++)
         {
@@ -99,6 +99,18 @@ document.getElementById("les-crabes").addEventListener("click", () =>{
         }
 
         allStrings = Array.from(document.querySelectorAll("th"));
+        for(let i = 0; i < allStrings.length; i++)
+        {
+            allStrings[i].innerHTML = lesCrabes + ".....";
+        }
+
+        allStrings = Array.from(document.querySelectorAll("button"));
+        for(let i = 0; i < allStrings.length; i++)
+        {
+            allStrings[i].innerHTML = lesCrabes + ".....";
+        }
+
+        allStrings = Array.from(document.getElementsByClassName("accordion-body"));
         for(let i = 0; i < allStrings.length; i++)
         {
             allStrings[i].innerHTML = lesCrabes + ".....";
