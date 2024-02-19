@@ -347,7 +347,15 @@ class Menu extends Phaser.Scene {
             }
         });
 
-        this.welcomeText = new ScrollableTextBox(this, 15, 15, 450, 330, "welcome! This is an interactive curriculum created both to give you moments of leisure during your hard work and to introduce me better as a developer.\n\n Don't worry, if you want the normal pdf curriculum you will find it downloadable inside!\n\n Have fun!", 11, false);
+        const today = new Date();
+        const dd = String(today.getDate()).padStart(2, '0');
+        const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        const yyyy = today.getFullYear();
+
+        this.welcomeText = new ScrollableTextBox(this, 15, 15, 450, 330, 
+            `Francesco Peruzzi - Software Developer - ${dd}/${mm}/${yyyy}\n\n\n
+            welcome! This is an interactive curriculum created both to give you moments of leisure during your hard work and to introduce me better as a developer.\n\n 
+            Don't worry, if you want the normal pdf curriculum you will find it downloadable inside!\n\n Have fun!`, 11, false);
     }
 }
 
