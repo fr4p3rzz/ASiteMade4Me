@@ -13,7 +13,7 @@ class Overworld extends Phaser.Scene
 
     preload() {
         // Carica il plugin AnimatedTiles
-        this.load.scenePlugin('AnimatedTiles', 'assets/js/AnimatedTiles.min.js', 'AnimatedTiles', 'animatedTiles');
+        this.load.scenePlugin('AnimatedTiles', 'assets/js/AnimatedTiles.js', 'AnimatedTiles', 'animatedTiles');
         
         // Carica la mappa Tiled JSON
         this.load.tilemapTiledJSON('map', 'assets/map/overworld.json');
