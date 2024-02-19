@@ -1,0 +1,23 @@
+{
+  "name": "fr4p3rzz.github.io",
+  "version": "1.0.0",
+  "description": "Interactive website portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fr4p3rzz/fr4p3rzz.github.io.git"
+  },
+  "author": "fr4p3rzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fr4p3rzz/fr4p3rzz.github.io/issues"
+  },
+  "homepage": "https://github.com/fr4p3rzz/fr4p3rzz.github.io#readme",
+  "dependencies": {
+    "phaser": "^3.50.0",
+    "phaser-animated-tiles-phaser3.5": "^2.0.5"
+  }
+}

@@ -1,0 +1,201 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+
+@media(min-width: 1025px){
+    .main-col{
+        height: 100vh;
+    }
+
+    .main-col:hover{
+        width: 20%;
+        overflow: hidden;
+    }
+
+    #back-col{
+        position: fixed;
+        margin-left: 50%;
+    }
+
+    .offcanvas-button{
+        display: none;
+    }
+}
+
+@media(max-width: 1024px)
+{
+    .main-col{
+        width: 100%;
+    }
+    .main-col:focus{
+        height: 100vh;
+        overflow: hidden;
+    }
+    .column-collapse{
+        display: block !important;
+    }
+    .offcanvas{
+        width: 75%;
+    }
+    #back-col{
+        align-content: center;
+    }
+    .offcanvas-button{
+        background-color: #C9CBA3;
+    }
+}
+
+@media(max-width: 767px)
+{
+    .accordion-body{
+        font-size: 12px;
+    }
+
+    #first-col{
+        padding: 8%;
+    }
+}
+
+@media(max-width: 370px)
+{
+    .accordion-body{
+        font-size: 9px;
+    }
+
+    .offcanvas{
+        width: 90% !important;
+    }
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.text-dark{
+    color: #2b2b2b;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-lg
+{
+    font-size: 20px;
+}
+
+.text-sm
+{
+    font-size: 12px;
+}
+
+.float{
+    z-index: 999;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#723D46;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #222;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.main-col{
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.2,0.5,0.3,1);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.description{
+    margin-right: -308px;
+    text-align: center;
+}
+
+.main-content{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.padded-row{
+    padding: 10px;
+}
+
+.social-icon{
+    font-size: 2.5em;
+    margin: 0.5em;
+}
+
+.dropdown-item{
+    margin: 10px;
+}
+
+.primary-pill{
+    margin-bottom: 10px;
+    background-color: #723D46;
+}
+
+.stripe{
+    padding: 35px;
+}
+
+.stripe-light{
+    background-color: #FFE1A8;
+}
+
+.stripe-dark{
+    background-color: #C9CBA3;
+}
+
+#les-crabes{
+    color: #2b2b2b;
+}
+
+#countdown-stripe{
+    font-size: 16px;
+}
+
+#first-col{
+    background-color: #FFE1A8;
+}
+
+#second-col{
+    background-color: #C9CBA3;
+}
+
+#back-col{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}

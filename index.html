@@ -1,180 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap 5.1.3 css -->
-    <link rel="stylesheet" href="assets/bootstrap-5.1.3/css/bootstrap.css">
-
-    <!-- Ye local drip -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <!-- fontawesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
-    <!-- (\/)(°,,,,°)(\/) Embrace the crab (\/)(°,,,,°)(\/)-->
-    <title>(\/)(°,,,,°)(\/)</title>
+    <title>Phaser Node Example</title>
+    <script src="node_modules/phaser/dist/phaser.min.js"></script>
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container-fluid" id="main-container">
-      <div class="row" id="heading">
-        <div class="col-md-6 text-center" id="back-col">
-          <p class="h1">Who am I?</p>
-          <p>Actually, just someone who have fun with coding</p>
-        <br>
-        <div class="row padded-row stripe stripe-dark" id="countdown-stripe">
-          <p class="col-md-6 my-auto text-dark"> Let's wait for <strong> Starfield </strong> toghether (they delayed it again):</p>
-          <p class="col-md-6 my-auto rounded-pill  primary-pill" id="countdown"></p>
-      </div>
-          <br>
-          <div class="row stripe stripe-light my-auto">
-            <p class="col-lg-12 my-auto" id="les-crabes">.....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....(\/)(°,,,,°)(\/).....</p>
-          </div>
-        <br>
-        <div class="row padded-row stripe stripe-dark text-dark text-center" id="contacts">
-           <p class="col-md-3 my-auto text-lg text-end">Get in touch?</p>
-          <div class="col-md-9">
-              <a class="fa-brands fa-linkedin social-icon" href="https://www.linkedin.com/in/francescoperuzzi/" target="_blank" alt="linkedin" title="Get in touch with LinkedIn"></a>
-              <a class="fa-brands fa-github social-icon" href="https://github.com/fr4p3rzz" target="_blank" alt="github" title="Add me on GitHub"></a>
-              <a class="fa-solid fa-envelope social-icon" href="https://mail.google.com/mail/?view=cm&fs=1&to=francesco95peruzzi@gmail.com&su=Hello!" target="_blank" alt="mail-me" title="Mail me"></a>
-              <a class="fa-solid fa-message social-icon" href="https://telegram.me/SplendidoGrongoInfradimensionale" target="_blank" alt="telegram" title="Message me with Telegram"></a>
-            </div>
-          </div>
-        
-
-        </div>
-      </div>
-      <div class="row" id="content">
-        <div class="col-md-2 main-col text-dark text-center collapse show" id="first-col">
-          <p class="h1">Fun stuff</p>
-          <div class="row padded-row">
-            <a class="btn btn-primary" href="https://poderrimo.itch.io/frogbery" alt="Frogbery">Frogbery</a>
-        </div>    
-        <div class="row padded-row">
-          <p class="description main-content">Little platform game developed with Unity, fully playable and downloadable!</p>
+    <div class="container-fluid position-absolute">
+        <div class="row align-text-center">
+            <div class="col-2 text-align-center margin-x">
+                <span class="name ">
+                    <p class="h1">Francesco Peruzzi</p>
+                    <p>coding passionate, tech enthusiast</p>
+                </span>
+                <p class="h2"><strong>Other projects</strong></p>
+                <a class="btn btn-primary" href="https://poderrimo.itch.io/frogbery" alt="Frogbery">Frogbery</a>    
+                 <p class="description main-content">Little platform game developed with Unity, fully playable and downloadable!</p>
+     
+                 <a class="btn btn-primary" href="/BrainfuckJS/" alt="brainfuck-js">Brainfuck interpreter</a>
+                 <p class="description main-content">Ever wanted to write a Brainfuck program? You're welcome.</p>
+     
+                 <a class="btn btn-primary" href="/MiseryCalculator/" alt="misery-calculator">Misery Calculator</a>
+                 <p class="description main-content">Enter your annual income and feel poor compared to the world's richests.</p>
+     
+                 <a class="btn btn-primary" href="/Blackboard4All/" alt="blackboard-4-all">Blackboard 4 All</a>
+                 <p class="description main-content">An interactive and simple blackboard you can freely use in your browser. Made with KonvaJS</p>
+     
+                 <a class="btn btn-primary" href="https://github.com/fr4p3rzz/Wallpainter.git" alt="Wallpainter">WallPainter</a>
+                 <p class="description main-content">Arcade game for 2 local players (needs Windows and SDL)</p>
+     
+                 <a class="btn btn-primary" href="https://github.com/fr4p3rzz/ShadySnake.git" alt="ShadySnake">Shady Snake</a>
+                 <p class="description main-content">Classic Snake game made with parallel programming. A treat for your GPU.</p>
+             </div>
         </div>  
-            <div class="row padded-row">
-                <a class="btn btn-primary" href="/BrainfuckJS/" alt="brainfuck-js">Brainfuck interpreter</a>
-            </div>    
-            <div class="row padded-row">
-              <p class="description main-content">Ever wanted to write a Brainfuck program? You're welcome.</p>
-            </div>   
-            <div class="row padded-row">
-              <a class="btn btn-primary" href="/MiseryCalculator/" alt="misery-calculator">Misery Calculator</a>
-          </div>    
-          <div class="row padded-row">
-            <p class="description main-content">Enter your annual income and feel poor compared to the world's richests.</p>
-          </div> 
-          <div class="row padded-row">
-            <a class="btn btn-primary" href="/Blackboard4All/" alt="blackboard-4-all">Blackboard 4 All</a>
-        </div>    
-        <div class="row padded-row">
-          <p class="description main-content">An interactive and simple blackboard you can freely use in your browser. Made with KonvaJS</p>
-        </div>     
-          <div class="row padded-row">
-            <a class="btn btn-primary" href="https://github.com/fr4p3rzz/Wallpainter.git" alt="Wallpainter">WallPainter</a>
-        </div>    
-        <div class="row padded-row">
-          <p class="description main-content">Arcade game for 2 local players (needs Windows and SDL)</p>
-        </div>   
-        <div class="row padded-row">
-          <a class="btn btn-primary" href="https://github.com/fr4p3rzz/ShadySnake.git" alt="ShadySnake">Shady Snake</a>
-      </div>    
-      <div class="row padded-row">
-        <p class="description main-content">Classic Snake game made with parallel programming. A treat for your GPU.</p>
-      </div>    
-        </div>
-        
-        <div class="col-md-2 main-col text-dark text-center" id="second-col">
-          <p class="h1">Known skills </p>
-          <div class="row">
-            <table class="table languages-table">
-              <thead>
-                <tr>
-                  <th scope="col">Language</th>
-                  <th scope="col">Confidence</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">JavaScript</th>
-                  <td><div class="progress"><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></td>
-                </tr>
-                <tr>
-                  <th scope="row">C#</th>
-                  <td><div class="progress"><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></td>
-                </tr>
-                <tr>
-                  <th scope="row">PHP</th>
-                  <td><div class="progress"><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div></td>
-                </tr>
-                <tr>
-                  <tr>
-                    <th scope="row">C / C++</th>
-                    <td><div class="progress"><div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></td>
-                  </tr>
-                  <tr>
-                  <th scope="row">HTML/CSS</th>
-                  <td><div class="progress"><div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div></td>
-                </tr>
-                  <th scope="row">Python</th>
-                  <td><div class="progress"><div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div></td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Want to know more?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>> 2015</strong>: I started to study Computer Science at <a href="https://www.univr.it/en/home" target="_blank">UniVR</a>, 
-                    approaching languages such as <strong>C</strong> and <strong>Assembly</strong> and the basis of computer engineering.<br><br>
-                    <strong>> 2019</strong>: Moved to Milan to study Game Programming at
-                    <a href="https://www.aiv01.it" target="_blank">AIV</a>; improving my previous studies and moving forward to technologies 
-                    such as <strong>C#</strong>, <strong>C++</strong> along with software lke <strong>Unity</strong> and <strong>Unreal Engine</strong>.<br><br>
-                    <strong>> 2019</strong>: Started to work as a full-stack web developer in a range of companies from real estate to streaming services.<br><br>
-                    <strong>> 2023 </strong>: Started to work as a professional game programmer using Unity and C# as main technologies.
-                  </div>
-                </div>
-              </div>
+    </div>
+
+    <div class="container-fluid position-absolute" style="right: 0;">
+        <div class="row align-items-center justify-content-end">
+            <div class="col-2 text-align-center margin-x">
+                <p class="h2">Get in touch</p>
+                <a href="https://www.linkedin.com/in/francescoperuzzi/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/fr4p3rzz" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                <a href="mailto:francesco95peruzzi@proton.me"><i class="fa fa-envelope fa-3x"></i></a>
             </div>
-          </div>
-          <br>
-          <p class="h1">I worked on</p>
-          <div class="row padded-row worked-on">
-              <a class="badge rounded-pill primary-pill" href="https://www.parisotto.it/it/en/" target="_blank" alt="parisotto-snc">ParisottoSNC</a>
-              <a class="badge rounded-pill primary-pill" href="https://www.concreteinvesting.com/" alt="here-we-are">Concrete Investing</a>
-              <a class="badge rounded-pill primary-pill" href="#" alt="here-we-are">This wonderful site, ofc</a>
-          </div>
         </div>
-        <div class="col-md-2 main-col text-dark text-center" id="alternative-contacts"  style="display: none;"></div>
-      </div>
     </div>
-
-
-    <div class="dropdown">
-      <button class="fa fa-plus float my-float" type="button" id="main-menu" data-bs-toggle="dropdown" aria-expanded="false"></button>
-      <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="main-menu">
-        <li><a class="dropdown-item rounded-pill" data-bs-toggle="collapse" href="#first-col" role="button" aria-expanded="false" aria-controls="first-col">Toggle the fun</a></li>
-        <li><a class="dropdown-item rounded-pill" href="assets/files/curriculum.pdf" download="curriculum">Get my CV</a></li>
-        <li><button class="dropdown-item rounded-pill offcanvas-button text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#second-col" aria-controls="second-col">Show me some data, boy</button></li>
-      </ul>
-    </div>
-
-<!-- Bootstrap 5.1.3 JS + popper -->
-<script type="text/javascript" src="assets/bootstrap-5.1.3/js/popper.min.js"></script>
-<script type="text/javascript" src="assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
-
-<!-- Custom JS -->
-<script type="text/javascript" src="assets/js/countdown.js"></script>
-<script type="text/javascript" src="assets/js/functions.js"></script>
-
-
 </body>
 </html>
